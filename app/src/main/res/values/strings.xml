@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="request_timeout">request Time out</string>
+    <string name="too_many_req">you send too many request,please wait.\n</string>
+    <string name="server_error">server error.</string>
+    <string name="no_internet">Could\'t connect to server, please check your Internet.</string>
+    <string name="unknown_error">unknown Error.</string>
+    <string name="serialization_error">could\'t serialize or desrialized data.</string>
 </resources>

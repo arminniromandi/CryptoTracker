@@ -16,20 +16,22 @@ import com.plcoding.cryptotracker.crypto.presentation.coin_list.CoinListState
 
 @Composable
 fun CoinListScreen(
-    state : CoinListState,
+    state: CoinListState,
     modifier: Modifier = Modifier
 ) {
-    if (state.isLoading){
+
+
+    if (state.isLoading) {
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
-            ){ CircularProgressIndicator() }
-    }else{
-        LazyColumn (
+        ) { CircularProgressIndicator() }
+    } else {
+        LazyColumn(
             Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
-        ){
-            items(state.coins){coinUi->
+        ) {
+            items(state.coins) { coinUi ->
                 CoinListItem(
                     coinUiModel = coinUi,
                     onClick = {},
@@ -40,7 +42,6 @@ fun CoinListScreen(
             }
         }
     }
-
 
 
 }
