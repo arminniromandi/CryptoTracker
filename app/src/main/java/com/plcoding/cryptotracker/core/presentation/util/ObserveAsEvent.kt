@@ -25,7 +25,7 @@ fun <T>ObserveAsEvent(
             withContext(Dispatchers.Main.immediate){
 
                 event.collect { event ->
-                    onEvent
+                    onEvent(event)
                 }
             }
 
